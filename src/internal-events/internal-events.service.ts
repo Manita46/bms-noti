@@ -23,7 +23,7 @@ export class InternalEventsService {
 
         const envelope = {
             messageId,
-            eventTypeCode: dto.eventType,
+            eventType: dto.eventType,
             correlationId: dto.correlationId ?? null,
             payload: dto.payload ?? null,
             //   receivedAt: new Date().toISOString(),
